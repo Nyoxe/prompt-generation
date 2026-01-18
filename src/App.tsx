@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import type { ReactElement } from 'react';
 import { Cpu, Terminal, Sparkles, Copy, Check } from 'lucide-react';
 import './index.css';
 
@@ -7,7 +8,7 @@ type Platform = 'nano-banana' | 'chatgpt' | 'antigravity' | 'google-ai' | 'lovab
 interface PlatformConfig {
   id: Platform;
   name: string;
-  icon: JSX.Element;
+  icon: ReactElement;
   description: string;
   color: string;
 }
